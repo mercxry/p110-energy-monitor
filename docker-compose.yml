@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  energy_monitor:
+    image: mercxry/p110-energy-monitor:latest
+    container_name: energy_monitor
+    environment:
+      - PLUG_NAME="name"
+      - TAPO_IP_ADDR="192.168.1.xxx"
+      - TAPO_EMAIL="your@email.here"
+      - TAPO_PASSWORD="hunter2"
+      - INFLUXDB_V2_URL="http://192.168.1.xxx:8086"
+      - INFLUXDB_V2_ORG="org"
+      - INFLUXDB_V2_BUCKET="bucket"
+      - INFLUXDB_V2_TOKEN="token"
+    restart: unless-stopped
