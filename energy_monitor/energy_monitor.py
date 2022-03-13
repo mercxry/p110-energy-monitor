@@ -16,7 +16,7 @@ s = sched.scheduler(time.time, time.sleep)
 
 def insert_data(sc, client, p110):
     bucket = "energy_consumption"
-    hostname = os.getenv("HOSTNAME")
+    hostname = os.getenv("PLUG_NAME")
     current_power = p110.get_current_power()
 
     # Create point with the current power consumption

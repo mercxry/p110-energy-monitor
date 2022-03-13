@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "p110-energy-monitor"
+name = "energy_monitor"
 version = "0.1.0"
-description = ""
+description = "Tapo P110 Energy Monitor"
 authors = ["Matteo Martellini <git@mercxry.me>"]
 license = "MIT"
 
