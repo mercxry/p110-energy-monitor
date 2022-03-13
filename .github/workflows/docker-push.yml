@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: mercxry/energy_monitor:latest
+          tags: mercxry/p110-energy-monitor:latest
