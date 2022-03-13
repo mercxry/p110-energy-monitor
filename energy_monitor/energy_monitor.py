@@ -15,7 +15,7 @@ s = sched.scheduler(time.time, time.sleep)
 
 
 def insert_data(sc, client, p110):
-    bucket = "energy_consumption"
+    bucket = os.getenv("INFLUXDB_V2_BUCKET")
     hostname = os.getenv("PLUG_NAME")
     current_power = p110.get_current_power()
 
