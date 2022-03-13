@@ -18,4 +18,4 @@ This script writes energy consumption data to InfluxDB v2, right now it only wri
 2. (Optional) Create a new bucket in InfluxDB
 3. Get an API Token with read and write permissions to the desired bucket from InfluxDB
 4. Copy the `example.env` file to `.env`, and fill out every environment variable
-5. Run the script with `poetry run python3 energy_monitor/main.py`
+5. Run the script with `poetry run python3 energy_monitor/energy_monitor.py`
