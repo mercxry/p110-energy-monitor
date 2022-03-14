@@ -1,4 +1,7 @@
 # Tapo P110 Energy Monitor for InfluxDB v2
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mercxry/p110-energy-monitor/ci)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/mercxry/p110-energy-monitor/latest)
+![Docker Pulls](https://img.shields.io/docker/pulls/mercxry/p110-energy-monitor)
 
 This script writes energy consumption data to InfluxDB v2, right now it only writes consumption in milliwatt (mW) every 3 seconds, but I would like to also add daily, monthly, yearly data registered by the Tapo smart plug.
 
