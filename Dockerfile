@@ -6,7 +6,7 @@ ENV PYTHONFAULTHANDLER=1 \
     PIP_NO_CACHE_DIR=off \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
-    POETRY_VERSION=1.1.14
+    POETRY_VERSION=1.4.2
 
 # Install build tools and poetry
 RUN apk add gcc libffi-dev musl-dev \
@@ -18,7 +18,7 @@ COPY poetry.lock pyproject.toml /app/
 
 # Install dependencies
 RUN poetry config virtualenvs.create false \
-    && poetry install --no-dev --no-interaction --no-ansi
+    && poetry install --only main --no-interaction --no-ansi
 
 # Copy the rest of the application
 COPY . /app
