@@ -153,3 +153,5 @@ cython_debug/
 
 # Pyright
 pyrightconfig.json
+
+docker-compose.yml.local
