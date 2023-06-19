@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-PyP100 = "^0.0.19"
+PyP100 = "^0.1.0"
 influxdb-client = {extras = ["ciso"], version = "^1.25.0"}
 python-dotenv = "^0.20.0"
 
